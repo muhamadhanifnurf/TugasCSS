@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #004b5a, #004b5a);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.card {
+  background: #1b6a7a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.card h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+.card h2:hover {
+  color: #68bff9; /* Warna biru saat di-hover */
+}
+.card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.bold {
+  font-weight: bold;
+}
