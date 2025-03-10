@@ -25,10 +25,10 @@ body {
 .card h2 {
   margin: 10px 0;
   font-size: 22px;
-  transition: color 0.3s ease; /* Animasi perubahan warna */
+  transition: color 0.3s ease;
 }
 .card h2:hover {
-  color: #68bff9; /* Warna biru saat di-hover */
+  color: #68bff9;
 }
 .card p {
   margin: 5px 0;
