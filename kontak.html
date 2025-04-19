@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kontak Kami</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Menu Samping</h2>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </aside>
+      <main class="content">
+        <h2>Hubungi Kami via WhatsApp</h2>
+        <form id="formWA" action="">
+          <div class="form-group">
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama" id="nama" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan :</label>
+            <textarea name="pesan" id="pesan" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Kirim ke WhatsApp</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <script>
+        document
+          .getElementById("formWA")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var nama = document.getElementById("nama").value;
+            var pesan = document.getElementById("pesan").value;
+            var noWA = "6283852424416";
+            var teks = `Halo, saya ${nama}.%0A${pesan}`;
+
+            window.open(`https://wa.me/${noWA}?text=${teks}`, "_blank");
+          });
+      </script>
+      <p>&copy; 2025 Website Saya</p>
+    </footer>
+  </body>
+</html>
